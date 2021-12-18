@@ -1,0 +1,52 @@
+.carousel {
+    margin-top: 60px;
+    box-shadow: 0 0 10px ;
+    ol {
+        position: absolute;
+        z-index: 2;
+        bottom: 10%;
+        li {
+            background-color: #d8d8d8;
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            border-radius: 50%;
+            border: none;
+        }
+        .active {
+            background-color: #fb4226;
+        }
+    }
+    .carousel-inner {
+        .play-btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            background: 0 0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        &:hover {
+            .play-btn {
+                opacity: 1;
+            }
+        }
+    }
+    .control {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        .left {
+            margin-right: 70%;
+        }
+        .right {
+            margin-left: 70%;
+        }
+    }
+}
