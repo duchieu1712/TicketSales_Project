@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home/Home';
-// import Detail from './Pages/Detail/detail';
+import Detail from './Pages/Detail/detail';
 // import Checkout from './Pages/Checkout/checkout';
 import Login from './Pages/Login/Login';
 import Signup from './Pages/Signup/Signup';
@@ -24,7 +24,7 @@ function App() {
           <HomeLayout>
             <Switch>
               <Route exact path='/' component={Home} />
-              {/* <Route exact path='/detail/:movieId' component={Detail} /> */}
+              <Route exact path='/detail/:movieId' component={Detail} />
             </Switch>
           </HomeLayout>
         </Route>
