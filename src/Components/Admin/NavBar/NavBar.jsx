@@ -48,7 +48,7 @@ const NavBar = ({ openMobile, onMobileClose }) => {
     <Box height="100%" display="flex" flexDirection="column" boxShadow={3}>
       <Box display="flex" flexDirection="column" alignItems="center" p={3}>
         <Avatar src="/img/avatar.png" className={classes.avatar} />
-        <Typography variant="h5">{currentUser.hoTen}</Typography>
+        <Typography variant="h5">{currentUser?.hoTen}</Typography>
         <Typography variant="body2">Admin Page</Typography>
       </Box>
 

@@ -7,13 +7,13 @@ import Detail from './Pages/Detail/detail';
 import Checkout from './Pages/Checkout/checkout';
 import Login from './Pages/Login/Login';
 import Signup from './Pages/Signup/Signup';
-// import AdminRoute from './Guards/AdminRoute/AdminRoute';
+import AdminRoute from './Guards/AdminRoute/AdminRoute';
 import HomeLayout from './Layouts/HomeLayout/HomeLayout';
 import AuthLayout from './Layouts/AuthLayout/AuthLayout';
 import CheckoutRoute from './Guards/CheckoutRoute/CheckoutRoute';
-// import AdminLayout from './Layouts/AdminLayout/AdminLayout';
-// import UserManagement from './Pages/UserManagement/UserManagement';
-// import MovieManagement from './Pages/MovieMangement/MovieManagement';
+import AdminLayout from './Layouts/AdminLayout/AdminLayout';
+import UserManagement from './Pages/UserManagement/UserManagement';
+import MovieManagement from './Pages/MovieMangement/MovieManagement';
 
 
 function App() {
@@ -55,14 +55,14 @@ function App() {
           </AdminLayout>
         </Route> */}
 
-        {/* <Route exact path={["/admin/user", "/admin/movie"]}>
+        <Route exact path={["/admin/user", "/admin/movie"]}>
           <AdminLayout >
             <Switch >
               <AdminRoute exact path='/admin/user' component={UserManagement} />
               <AdminRoute exact path='/admin/movie' component={MovieManagement} />
             </Switch>
           </AdminLayout>
-        </Route> */}
+        </Route>
 
         <Redirect to='/' />
       </Switch>
